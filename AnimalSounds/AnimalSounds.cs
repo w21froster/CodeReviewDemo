@@ -2,6 +2,8 @@
 // Copyright (c) Joe Bob. All rights reserved.
 // </copyright>
 
+using System.Data.Common;
+
 namespace CodeReviewDemo;
 
 /// <summary>
@@ -12,42 +14,38 @@ public class AnimalSounds
     public static void Main(string[] args)
     {
         Console.WriteLine("Welcome to this Animal Sounds Program!");
-
-        while (true)
+        bool continueProgram = true;
+        
+        while (continueProgram)
         {
             Console.WriteLine("Please enter an animal from the options below: ");
             Console.WriteLine("|Cat|Dog|Mouse|Crow|Cow|");
             Console.WriteLine("Enter \"Q\" to quit");
             string userSelection = Console.ReadLine();
 
-            if (userSelection!.Equals("Cat"))
+            switch (userSelection)
             {
-                Console.WriteLine("Meow!");
-            }
-
-            if (userSelection!.Equals("Dog"))
-            {
-                Console.WriteLine("Woof!");
-            }
-
-            if (userSelection!.Equals("Mouse"))
-            {
-                Console.WriteLine("Squeak!");
-            }
-
-            if (userSelection.Equals("Crow"))
-            {
-                Console.WriteLine("Caw!");
-            }
-
-            if (userSelection.Equals("Cow"))
-            {
-                Console.WriteLine("Moo!");
-            }
-
-            if (userSelection.Equals("Q"))
-            {
-                break;
+                case "Cat":
+                    Console.WriteLine("Meow!");
+                    break;
+                case "Dog":
+                    Console.WriteLine("Woof!");
+                    break;
+                case "Mouse":
+                    Console.WriteLine("Squeak!");
+                    break;
+                case "Crow":
+                    Console.WriteLine("Caw!");
+                    break;
+                case "Cow":
+                    Console.WriteLine("Moo!");
+                    break;
+                case "Q":
+                    continueProgram = false;
+                    break;
+                default:
+                    Console.WriteLine("Unknown Animal.");
+                    break;
             }
         }
         

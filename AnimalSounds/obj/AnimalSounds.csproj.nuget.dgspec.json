@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ganeshram Krishna\\WSUJunior2022-2023\\presentation\\Cpts321-Code-Review-Demo\\AnimalSounds\\AnimalSounds.csproj": {}
+    "C:\\Users\\Ganeshram Krishna\\WSUJunior2022-2023\\presentation\\CodeReviewDemo\\AnimalSounds\\AnimalSounds.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ganeshram Krishna\\WSUJunior2022-2023\\presentation\\Cpts321-Code-Review-Demo\\AnimalSounds\\AnimalSounds.csproj": {
+    "C:\\Users\\Ganeshram Krishna\\WSUJunior2022-2023\\presentation\\CodeReviewDemo\\AnimalSounds\\AnimalSounds.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ganeshram Krishna\\WSUJunior2022-2023\\presentation\\Cpts321-Code-Review-Demo\\AnimalSounds\\AnimalSounds.csproj",
+        "projectUniqueName": "C:\\Users\\Ganeshram Krishna\\WSUJunior2022-2023\\presentation\\CodeReviewDemo\\AnimalSounds\\AnimalSounds.csproj",
         "projectName": "AnimalSounds",
-        "projectPath": "C:\\Users\\Ganeshram Krishna\\WSUJunior2022-2023\\presentation\\Cpts321-Code-Review-Demo\\AnimalSounds\\AnimalSounds.csproj",
+        "projectPath": "C:\\Users\\Ganeshram Krishna\\WSUJunior2022-2023\\presentation\\CodeReviewDemo\\AnimalSounds\\AnimalSounds.csproj",
         "packagesPath": "C:\\Users\\Ganeshram Krishna\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ganeshram Krishna\\WSUJunior2022-2023\\presentation\\Cpts321-Code-Review-Demo\\AnimalSounds\\obj\\",
+        "outputPath": "C:\\Users\\Ganeshram Krishna\\WSUJunior2022-2023\\presentation\\CodeReviewDemo\\AnimalSounds\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ganeshram Krishna\\AppData\\Roaming\\NuGet\\NuGet.Config"
