@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "znZhQ6pIX9A65CYdmzkLm39poiT9tfcFQyv2eB92p9OyGTxHCFfYHsA1zd4Ml2fBZ+ICG6qzSRExCptqVM3EFw==",
+  "dgSpecHash": "IyGstomp5tidsVB/7d+nxxzbxTdGxKymp45HoxQ87kCk9Wp7gY8CnR18moW+B7wLnIC+ELmGhdV6WM6hLzwk1Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\Ganeshram Krishna\\WSUJunior2022-2023\\presentation\\CodeReviewDemo\\AnimalSounds\\AnimalSounds.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Ganeshram Krishna\\.nuget\\packages\\stylecop.analyzers\\1.2.0-beta.435\\stylecop.analyzers.1.2.0-beta.435.nupkg.sha512",
+    "C:\\Users\\Ganeshram Krishna\\.nuget\\packages\\stylecop.analyzers.unstable\\1.2.0.435\\stylecop.analyzers.unstable.1.2.0.435.nupkg.sha512"
+  ],
   "logs": []
 }
