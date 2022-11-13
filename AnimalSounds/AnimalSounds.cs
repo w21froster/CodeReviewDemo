@@ -39,26 +39,11 @@ public class AnimalSounds
 
             switch (userSelection)
             {
-                case "Cat":
-                    Console.WriteLine("Meow!");
-                    break;
-                case "Dog":
-                    Console.WriteLine("Woof!");
-                    break;
-                case "Mouse":
-                    Console.WriteLine("Squeak!");
-                    break;
-                case "Crow":
-                    Console.WriteLine("Caw!");
-                    break;
-                case "Cow":
-                    Console.WriteLine("Moo!");
-                    break;
                 case "Q":
                     continueProgram = false;
                     break;
                 default:
-                    Console.WriteLine("Unknown Animal.");
+                    animalsandsoudns[userSelection].get_Sound();
                     break;
             }
         }
