@@ -19,6 +19,17 @@ public class AnimalSounds
         Console.WriteLine("Welcome to this animal Sounds Program!");
         bool continueProgram = true;
 
+        // making a list so we can add mroe animals
+        Dictionary<string, animal> animalsandsoudns = new Dictionary<string, animal>()
+        {
+            { "Cat", new animal("Cat","Meow!") },
+            { "Dog", new animal("Dog", "Woof!") },
+            { "Mouse", new animal("Mouse", "Sqeak!") },
+            {"Crow", new animal("Crow","Caw!") },
+            {" Cow", new animal("Cow", "Moo!") },
+            {"Car", new animal("Car","Wroom!") }, // I like car so I put car here too ;)
+        };
+
         while (continueProgram)
         {
             Console.WriteLine("Please enter an animal from the options below: ");
