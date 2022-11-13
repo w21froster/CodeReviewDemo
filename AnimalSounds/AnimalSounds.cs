@@ -1,10 +1,13 @@
-﻿// <copyright file="AnimalSounds.cs" company="Joe Bob">
-// Copyright (c) Joe Bob. All rights reserved.
+﻿// <copyright file="AnimalSounds.cs" company="Joe Bob @ PlaceholderCompany">
+// Copyright (c) Joe Bob @ PlaceholderCompany. All rights reserved.
 // </copyright>
 
 using System.Data.Common;
 
 namespace CodeReviewDemo;
+
+// I am making changes i think wee should add to fix probelms and make code better :)
+// I made animal class so we can treat animals like objects and make new animals dynamically
 
 /// <summary>
 /// Prints the sounds of different animals!
@@ -13,9 +16,9 @@ public class AnimalSounds
 {
     public static void Main(string[] args)
     {
-        Console.WriteLine("Welcome to this Animal Sounds Program!");
+        Console.WriteLine("Welcome to this animal Sounds Program!");
         bool continueProgram = true;
-        
+
         while (continueProgram)
         {
             Console.WriteLine("Please enter an animal from the options below: ");
@@ -48,7 +51,7 @@ public class AnimalSounds
                     break;
             }
         }
-        
+
         Console.WriteLine("Goodbye!");
     }
 }
