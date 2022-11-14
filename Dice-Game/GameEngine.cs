@@ -16,7 +16,7 @@ namespace Dice_Game
         {
             // Create a new player class.
             P = new P();
-
+            P.Name = "Joe Bob"; // Gotta change the default name to the best one there is :100:
             // Create a new AI_Engine.
             A = new Engine();
         }
@@ -59,6 +59,8 @@ namespace Dice_Game
             aiRoll = this.A.Roll();
 
             result = Winner(playerRoll, aiRoll);
+            if (playerRoll == 100) // Lil easteregg for the players ya know. :quite: Im always a 100
+            { JOEISAWESOME(); }
 
             switch(result)
             {
@@ -87,15 +89,10 @@ namespace Dice_Game
 
         private bool Winner(int playerRoll, int aiRoll)
         {
-            if (playerRoll >= aiRoll)
-            {
-                this.P.Points++;
-                return true;
-            }
-            else if (aiRoll <= playerRoll)
-            {
-                return false;
-            }
+            if (playerRoll >= aiRoll) { this.P.Points++; 
+                                                    return true; }
+            else if (aiRoll <= playerRoll) {
+                                                    return false; }
 
             return false;
         }
@@ -113,10 +110,20 @@ namespace Dice_Game
             string n;
             n = Console.ReadLine();
 
-            // Check out this cool cat function!!!!!
-            nul(n);
+            // Boss didn't even gimme a CW in Joe Bob's function :cry:
+            Console.WriteLine("Change your name to: ");
 
-            P.Name = n;
+
+            // Check out this cool cat function!!!!! :100:
+            if ( nul(n) == false )
+                { P.Name = n; }
+
+            else
+            {
+                Console.WriteLine("Hey man change it to an actual name???????");
+            }
+
+            // P.Name = n;
         }
 
         // Any idiot would know what this does :LaughingFace:
