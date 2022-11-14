@@ -8,16 +8,17 @@ namespace Dice_Game
 {
     internal class GameEngine
     {
-        internal Player Player;
-        internal AI_Engine AI_Engine;
+        internal P P;
+        internal Engine A;
 
+        // Simplified some of these SUPER LONG variables... You're welcome... :100:
         public GameEngine()
         {
             // Create a new player class.
-            Player = new Player();
+            P = new P();
 
             // Create a new AI_Engine.
-            AI_Engine = new AI_Engine();
+            A = new Engine();
         }
 
         public bool MainMenu()
@@ -27,9 +28,9 @@ namespace Dice_Game
             PrintMenu();
             
             // Get the user input.
-            string userInput = Console.ReadLine();
+            //string userInput = Console.ReadLine(); You're gonna lose processing power if you add it like this... I'm the best -Joe Bob.
 
-            switch (userInput)
+            switch (Console.ReadLine())
             {
                 case "1":
                     // Clear up the Console.
@@ -51,11 +52,11 @@ namespace Dice_Game
             int playerRoll;
             int aiRoll;
             bool result;
-            Console.WriteLine(Player.Name + " SCORE: " + Player.Points);
+            Console.WriteLine(P.Name + " SCORE: " + P.Points);
             Console.WriteLine("Rollllllinnnggggg..........");
 
-            playerRoll = this.Player.PlayerRoll();
-            aiRoll = this.AI_Engine.AI_Roll();
+            playerRoll = this.P.Roll();
+            aiRoll = this.A.Roll();
 
             result = Winner(playerRoll, aiRoll);
 
@@ -80,7 +81,7 @@ namespace Dice_Game
 
         private void DisplayRolls(int playerRoll, int aiRoll)
         {
-            Console.WriteLine(Player.Name + "Rolled a " + playerRoll);
+            Console.WriteLine(P.Name + "Rolled a " + playerRoll);
             Console.WriteLine("The Computer scored a " + aiRoll);
         }
 
@@ -88,7 +89,7 @@ namespace Dice_Game
         {
             if (playerRoll >= aiRoll)
             {
-                this.Player.Points++;
+                this.P.Points++;
                 return true;
             }
             else if (aiRoll <= playerRoll)
@@ -101,7 +102,7 @@ namespace Dice_Game
 
         private void GameOver()
         {
-            Console.WriteLine("Sorry " + this.Player.Name + "maybe next time!" );
+            Console.WriteLine("Sorry " + this.P.Name + "maybe next time!" );
             Console.WriteLine("Press any button to continue");
             Console.ReadLine();
             MainMenu();
@@ -115,7 +116,7 @@ namespace Dice_Game
             // Check out this cool cat function!!!!!
             nul(n);
 
-            Player.Name = n;
+            P.Name = n;
         }
 
         // Any idiot would know what this does :LaughingFace:
@@ -130,9 +131,17 @@ namespace Dice_Game
         private void PrintMenu()
         {
             Console.WriteLine("***** MAIN MENU *****");
-            Console.WriteLine("GREETINGS " + Player.Name + "!");
+            Console.WriteLine("GREETINGS " + P.Name + "!");
             Console.WriteLine("   Press 1 to play!   ");
             Console.WriteLine("   Press 2 to change your name");
+        }
+        // Its true :100:
+        public void JOEISAWESOME()
+        {
+            while (true)
+            {
+                Console.WriteLine("Joe Is AWESOME!!!!");
+            }
         }
     }
 }

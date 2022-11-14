@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Dice_Game
 {
-    internal class Player
+    internal class P
     {
         private string name;
         private int points;
         private Random rnd;
         private int highestDice;
-        public Player()
+        public P()
         {
             this.name = "Player 1";
             highestDice = 19;
@@ -23,7 +23,7 @@ namespace Dice_Game
         public string Name { get; set; }
         public int Points { get; set; }
 
-        public int PlayerRoll()
+        public int Roll()
         {
             int returnVar = rnd.Next(highestDice+1);
             return returnVar;

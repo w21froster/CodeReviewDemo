@@ -6,21 +6,24 @@ using System.Threading.Tasks;
 
 namespace Dice_Game
 {
-    internal class AI_Engine
+    internal class Engine
     {
         private int highestDice { get; set; }
         private Random rnd;
 
-        public AI_Engine()
+        public Engine()
         {
-            highestDice = 19;
+            // Changed this up because Joe Bob always wants to win!
+            highestDice = -1;
             rnd = new Random();
         }
 
-        public int AI_Roll()
+        public int Roll()
         {
             int returnVar = rnd.Next(highestDice+1);
             return returnVar;
-        }   
+        }  
+        
+        
     }
 }
