@@ -38,6 +38,7 @@ namespace Dice_Game
                     break;
                 case "2":
                     this.ChangeName();
+                    MainMenu(); // Gotta redo the main menu!
                     break;
                 default:
                     return false;
@@ -108,7 +109,7 @@ namespace Dice_Game
 
         private void ChangeName()
         {
-
+            this.Player.Name = Console.ReadLine();
         }
 
         private void PrintMenu()

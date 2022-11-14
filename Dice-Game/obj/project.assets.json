@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Caleb\\Documents\\GitHub\\Cpts321-Code-Review-Demo\\Dice-Game\\Dice-Game.csproj",
+      "projectUniqueName": "C:\\Users\\Caleb\\Documents\\GitHub\\CodeReviewDemo\\Dice-Game\\Dice-Game.csproj",
       "projectName": "Dice-Game",
-      "projectPath": "C:\\Users\\Caleb\\Documents\\GitHub\\Cpts321-Code-Review-Demo\\Dice-Game\\Dice-Game.csproj",
+      "projectPath": "C:\\Users\\Caleb\\Documents\\GitHub\\CodeReviewDemo\\Dice-Game\\Dice-Game.csproj",
       "packagesPath": "C:\\Users\\Caleb\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Caleb\\Documents\\GitHub\\Cpts321-Code-Review-Demo\\Dice-Game\\obj\\",
+      "outputPath": "C:\\Users\\Caleb\\Documents\\GitHub\\CodeReviewDemo\\Dice-Game\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
