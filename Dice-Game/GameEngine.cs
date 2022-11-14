@@ -51,7 +51,7 @@ namespace Dice_Game
             int playerRoll;
             int aiRoll;
             bool result;
-            Console.WriteLine(Player.Name + "SCORE: " + Player.Points);
+            Console.WriteLine(Player.Name + " SCORE: " + Player.Points);
             Console.WriteLine("Rollllllinnnggggg..........");
 
             playerRoll = this.Player.PlayerRoll();
@@ -109,7 +109,9 @@ namespace Dice_Game
 
         private void ChangeName()
         {
-            this.Player.Name = Console.ReadLine();
+            string n;
+            n = Console.ReadLine();
+            Player.Name = n;
         }
 
         private void PrintMenu()
