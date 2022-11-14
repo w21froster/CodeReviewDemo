@@ -111,7 +111,20 @@ namespace Dice_Game
         {
             string n;
             n = Console.ReadLine();
+
+            // Check out this cool cat function!!!!!
+            nul(n);
+
             Player.Name = n;
+        }
+
+        // Any idiot would know what this does :LaughingFace:
+        private bool nul(string Name)
+        {
+            bool BOOLING;
+            if (Name == null)
+            {
+                return true; } else { return false; }
         }
 
         private void PrintMenu()
